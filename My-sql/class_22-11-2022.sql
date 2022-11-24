@@ -37,3 +37,29 @@ insert into student_details values
 (8,'ABHISHEK',834821188,'abhishek@gmail.com','darjeeling','MSc',1000.3,'1988-03-07',26),
 (9,'BIDISHA',834824488,'bidi@gmail.com','jammu and kashmir','BE',1000.3,'1988-02-08',33),
 (10,'TIYASA',834800288,'tiyasa@gmail.com','chennai','BSc',1000.3,'1979-12-09',40);
+# select
+SELECT * FROM class_c2268.student_details where squalification ='BE';
+#and
+SELECT * FROM class_c2268.student_details where saddr = 'chennai' and sfees = 1000.3;
+# or
+SELECT * FROM class_c2268.student_details where saddr = 'chennai' or sfees = '1000.3';
+#not
+SELECT * FROM class_c2268.student_details where squalification!='BE';
+#in
+SELECT * FROM class_c2268.student_details where saddr in ('mumbai', 'chennai');
+#in 
+SELECT * FROM class_c2268.student_details where squalification in ('MCA', 'BE');
+#starts with
+SELECT * FROM class_c2268.student_details where sname like 'A%';
+#ends with
+SELECT * FROM class_c2268.student_details where sname like '%A';
+#contain the specifiede letter
+SELECT * FROM class_c2268.student_details where sname like'%A%';
+#starts and ends with
+SELECT * FROM class_c2268.student_details where sname like 'B%A';
+#missing letter
+SELECT * FROM class_c2268.student_details where saddr like 'che__ai';
+
+
+
+
